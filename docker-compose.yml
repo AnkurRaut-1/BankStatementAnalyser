@@ -1,0 +1,31 @@
+version: "2"
+services:
+  bank_statement_analysis:
+    container_name: bsaservice
+    image: bsaservice
+    build: bank_statement_analysis/
+    restart: always
+    ports:
+      - 8081:8081
+
+  eureka:
+    image: eureka
+    build: eureka/
+    restart: always
+    ports:
+      - 8761:8761
+
+  gateway:
+    image: gateway
+    build: gateway/
+    restart: always
+    ports:
+      - 8080:8080
+
+  mongodbservice:
+    image: mongo:4.4.14
+    container_name: bsa-mongo-container
+    restart: always
+#    hostname: localhost
+    ports:
+      - 27017:27017

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: GATEWAY-SERVICE
+  cloud:
+    gateway:
+      routes:
+        - id: bank_statement_analysis
+          uri: lb://BSA-SERVICE
+          predicates:
+            - Path=/api/**
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:8761/eureka
+    instance:
+      hostname: eureka
+
+server:
+  port: 8080

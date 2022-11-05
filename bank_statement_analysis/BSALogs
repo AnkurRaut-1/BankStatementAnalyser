@@ -1,0 +1,245 @@
+2022-10-10 14:22:04.835  INFO 6087 --- [restartedMain] c.e.b.BankStatementAnalysisApplication   : Starting BankStatementAnalysisApplication using Java 11.0.15.1 on RV509 with PID 6087 (/home/ankur/BSA POCs/bank_statement_analysis/target/classes started by ankur in /home/ankur/BSA POCs/bank_statement_analysis)
+2022-10-10 14:22:04.839  INFO 6087 --- [restartedMain] c.e.b.BankStatementAnalysisApplication   : No active profile set, falling back to 1 default profile: "default"
+2022-10-10 14:22:05.054  INFO 6087 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-10 14:22:05.055  INFO 6087 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-10 14:22:06.721  INFO 6087 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-10-10 14:22:06.831  INFO 6087 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98 ms. Found 1 MongoDB repository interfaces.
+2022-10-10 14:22:07.784  INFO 6087 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-10 14:22:07.805  INFO 6087 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-10 14:22:07.806  INFO 6087 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-10 14:22:07.921  INFO 6087 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-10-10 14:22:07.922  INFO 6087 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2862 ms
+2022-10-10 14:22:08.387  INFO 6087 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.0-48-generic"}, "platform": "Java/Oracle Corporation/11.0.15.1+2-LTS-10"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5cd55f79]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2022-10-10 14:22:08.434  INFO 6087 --- [cluster-rtt-ClusterId{value='6343dd38a12081024525eeaa', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+2022-10-10 14:22:08.434  INFO 6087 --- [cluster-ClusterId{value='6343dd38a12081024525eeaa', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+2022-10-10 14:22:08.455  INFO 6087 --- [cluster-ClusterId{value='6343dd38a12081024525eeaa', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=63449378}
+2022-10-10 14:22:08.796  INFO 6087 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-10-10 14:22:10.007  INFO 6087 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-10 14:22:10.028  INFO 6087 --- [restartedMain] c.e.b.BankStatementAnalysisApplication   : Started BankStatementAnalysisApplication in 6.517 seconds (JVM running for 8.501)
+2022-10-10 14:43:30.881  INFO 6087 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-10 14:43:30.882  INFO 6087 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-10 14:43:30.885  INFO 6087 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-10-10 14:43:32.632 ERROR 6087 --- [http-nio-8080-exec-2] c.e.b.controller.FileController          : Incorrect Password.
+2022-10-10 14:44:03.623  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.controller.FileController          : Uploading the file: XXXXXXXXXXX5277-13-03-2022to12-09-2022.pdf
+2022-10-10 14:44:03.666  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Processing file...
+2022-10-10 14:44:03.677  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Number of pages found: 3
+2022-10-10 14:44:14.373  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Converting PDF file <TABLES> to Excel Sheet
+2022-10-10 14:44:14.377  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Extracting the data into JSON format.
+2022-10-10 14:44:14.385  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Extraction Completed.
+2022-10-10 14:44:14.414  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Removing the password from pdf file
+2022-10-10 14:44:14.415  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Converting PDF file <TABLES> to Excel Sheet
+2022-10-10 14:44:14.579  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_PDF_Service            : Password removal done
+2022-10-10 14:44:15.058  WARN 6087 --- [http-nio-8080-exec-4] o.a.pdfbox.pdmodel.font.PDType1Font      : Using fallback font LiberationSans for base font Symbol
+2022-10-10 14:44:15.064  WARN 6087 --- [http-nio-8080-exec-4] o.a.pdfbox.pdmodel.font.PDType1Font      : Using fallback font LiberationSans for base font ZapfDingbats
+2022-10-10 14:44:15.405  WARN 6087 --- [http-nio-8080-exec-4] o.a.pdfbox.pdmodel.font.PDSimpleFont     : No Unicode mapping for .notdef (9) in font Times-Roman
+2022-10-10 14:44:15.677  WARN 6087 --- [Finalizer] org.apache.pdfbox.cos.COSDocument        : Warning: You did not close a PDF Document
+2022-10-10 14:44:15.682  INFO 6087 --- [http-nio-8080-exec-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:6}] to localhost:27017
+2022-10-10 14:44:15.842  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.controller.FileController          : Uploaded the file successfully: XXXXXXXXXXX5277-13-03-2022to12-09-2022.pdf
+2022-10-10 14:44:15.871  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Creating BSA Report...
+2022-10-10 14:44:15.974  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Credits
+2022-10-10 14:44:15.975  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Debits
+2022-10-10 14:44:15.976  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting monthwise balance.
+2022-10-10 14:44:15.976  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Opening Balance.
+2022-10-10 14:44:15.977  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Closing Balance.
+2022-10-10 14:44:15.977  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Average Balance
+2022-10-10 14:44:15.980  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Credit Balance
+2022-10-10 14:44:15.981  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Debit Balance
+2022-10-10 14:44:15.981  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:44:15.999  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Credit
+2022-10-10 14:44:16.006  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Debit
+2022-10-10 14:44:16.008  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:44:16.008  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Balance
+2022-10-10 14:44:16.009  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Credits
+2022-10-10 14:44:16.009  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Debits
+2022-10-10 14:44:16.010  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Credits
+2022-10-10 14:44:16.015  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Debits
+2022-10-10 14:44:16.020  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Credits
+2022-10-10 14:44:16.025  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Debits
+2022-10-10 14:44:16.034  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Average Balance
+2022-10-10 14:44:16.039  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Balance
+2022-10-10 14:44:16.049  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Highest Monthly Average Balance
+2022-10-10 14:44:16.049  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Lowest Monthly Average Balance
+2022-10-10 14:44:16.053  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Inflows
+2022-10-10 14:44:16.054  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting NEFT Inflows
+2022-10-10 14:44:16.054  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Inflows
+2022-10-10 14:44:16.054  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Pd Inflows
+2022-10-10 14:44:16.055  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting ATM Outflows
+2022-10-10 14:44:16.055  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Outflows
+2022-10-10 14:44:16.055  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Outflows
+2022-10-10 14:44:16.055  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting EMI Outflows
+2022-10-10 14:44:16.056  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Coll Outflows
+2022-10-10 14:44:16.056  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Particulars...
+2022-10-10 14:44:16.057  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Credits
+2022-10-10 14:44:16.058  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Debits
+2022-10-10 14:44:16.058  INFO 6087 --- [http-nio-8080-exec-4] c.e.b.service.BSA_AnalyseData_service    : BSA Report Created Successfully.
+2022-10-10 14:46:05.713  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.controller.FileController          : Uploading the file: sample3.xls
+2022-10-10 14:46:05.718  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_Excel_Service          : Processing the Excel file...
+2022-10-10 14:46:05.719  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_Excel_Service          : Extracting data from Excel Sheet to JSON Format.
+2022-10-10 14:46:05.883  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_Excel_Service          : Extraction Completed.
+2022-10-10 14:46:05.938  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.controller.FileController          : Uploaded the file successfully: sample3.xls
+2022-10-10 14:46:05.939  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Creating BSA Report...
+2022-10-10 14:46:05.974  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Credits
+2022-10-10 14:46:05.976  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Debits
+2022-10-10 14:46:05.977  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting monthwise balance.
+2022-10-10 14:46:05.978  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Opening Balance.
+2022-10-10 14:46:05.978  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Closing Balance.
+2022-10-10 14:46:05.978  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Average Balance
+2022-10-10 14:46:05.979  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Credit Balance
+2022-10-10 14:46:05.979  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Debit Balance
+2022-10-10 14:46:05.979  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:46:05.993  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Credit
+2022-10-10 14:46:05.994  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Debit
+2022-10-10 14:46:05.995  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:46:05.995  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Balance
+2022-10-10 14:46:05.995  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Credits
+2022-10-10 14:46:05.995  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Debits
+2022-10-10 14:46:05.995  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Credits
+2022-10-10 14:46:05.996  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Debits
+2022-10-10 14:46:05.996  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Credits
+2022-10-10 14:46:05.996  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Debits
+2022-10-10 14:46:05.997  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Average Balance
+2022-10-10 14:46:05.997  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Balance
+2022-10-10 14:46:06.015  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Highest Monthly Average Balance
+2022-10-10 14:46:06.015  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Lowest Monthly Average Balance
+2022-10-10 14:46:06.016  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Inflows
+2022-10-10 14:46:06.016  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting NEFT Inflows
+2022-10-10 14:46:06.020  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Inflows
+2022-10-10 14:46:06.021  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Pd Inflows
+2022-10-10 14:46:06.021  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting ATM Outflows
+2022-10-10 14:46:06.021  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Outflows
+2022-10-10 14:46:06.021  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Outflows
+2022-10-10 14:46:06.022  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting EMI Outflows
+2022-10-10 14:46:06.022  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Coll Outflows
+2022-10-10 14:46:06.022  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Particulars...
+2022-10-10 14:46:06.023  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Credits
+2022-10-10 14:46:06.023  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Debits
+2022-10-10 14:46:06.024  INFO 6087 --- [http-nio-8080-exec-7] c.e.b.service.BSA_AnalyseData_service    : BSA Report Created Successfully.
+2022-10-10 14:55:19.800  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.controller.FileController          : Searching Customer with E-Mail Address: john@gmail.com
+2022-10-10 14:55:19.943  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Creating BSA Report...
+2022-10-10 14:55:19.954  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Credits
+2022-10-10 14:55:19.954  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Debits
+2022-10-10 14:55:19.954  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting monthwise balance.
+2022-10-10 14:55:19.955  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Opening Balance.
+2022-10-10 14:55:19.955  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Closing Balance.
+2022-10-10 14:55:19.955  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Average Balance
+2022-10-10 14:55:19.955  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Credit Balance
+2022-10-10 14:55:19.955  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Debit Balance
+2022-10-10 14:55:19.955  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:55:19.957  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Credit
+2022-10-10 14:55:19.958  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Debit
+2022-10-10 14:55:19.958  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:55:19.958  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Balance
+2022-10-10 14:55:19.959  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Credits
+2022-10-10 14:55:19.959  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Debits
+2022-10-10 14:55:19.959  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Credits
+2022-10-10 14:55:19.959  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Debits
+2022-10-10 14:55:19.960  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Credits
+2022-10-10 14:55:19.960  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Debits
+2022-10-10 14:55:19.960  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Average Balance
+2022-10-10 14:55:19.960  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Balance
+2022-10-10 14:55:19.964  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Highest Monthly Average Balance
+2022-10-10 14:55:19.964  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Lowest Monthly Average Balance
+2022-10-10 14:55:19.964  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Inflows
+2022-10-10 14:55:19.965  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting NEFT Inflows
+2022-10-10 14:55:19.965  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Inflows
+2022-10-10 14:55:19.965  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Pd Inflows
+2022-10-10 14:55:19.965  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting ATM Outflows
+2022-10-10 14:55:19.966  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Outflows
+2022-10-10 14:55:19.966  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Outflows
+2022-10-10 14:55:19.966  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting EMI Outflows
+2022-10-10 14:55:19.966  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Coll Outflows
+2022-10-10 14:55:19.967  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Particulars...
+2022-10-10 14:55:19.967  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Credits
+2022-10-10 14:55:19.967  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Debits
+2022-10-10 14:55:19.968  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.service.BSA_AnalyseData_service    : BSA Report Created Successfully.
+2022-10-10 14:55:19.968  INFO 6087 --- [http-nio-8080-exec-9] c.e.b.controller.FileController          : Customer Found with E-Mail Address: john@gmail.com
+2022-10-10 14:55:44.123  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.controller.FileController          : Searching Customer with Customer ID: 888342320
+2022-10-10 14:55:44.144  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Creating BSA Report...
+2022-10-10 14:55:44.154  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Credits
+2022-10-10 14:55:44.155  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Debits
+2022-10-10 14:55:44.155  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting monthwise balance.
+2022-10-10 14:55:44.156  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Opening Balance.
+2022-10-10 14:55:44.156  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Closing Balance.
+2022-10-10 14:55:44.156  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Average Balance
+2022-10-10 14:55:44.156  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Credit Balance
+2022-10-10 14:55:44.156  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Debit Balance
+2022-10-10 14:55:44.156  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:55:44.157  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Credit
+2022-10-10 14:55:44.158  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Debit
+2022-10-10 14:55:44.158  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 14:55:44.158  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Balance
+2022-10-10 14:55:44.159  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Credits
+2022-10-10 14:55:44.159  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Debits
+2022-10-10 14:55:44.159  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Credits
+2022-10-10 14:55:44.160  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Debits
+2022-10-10 14:55:44.160  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Credits
+2022-10-10 14:55:44.160  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Debits
+2022-10-10 14:55:44.161  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Average Balance
+2022-10-10 14:55:44.161  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Balance
+2022-10-10 14:55:44.166  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Highest Monthly Average Balance
+2022-10-10 14:55:44.167  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Lowest Monthly Average Balance
+2022-10-10 14:55:44.168  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Inflows
+2022-10-10 14:55:44.168  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting NEFT Inflows
+2022-10-10 14:55:44.169  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Inflows
+2022-10-10 14:55:44.174  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Pd Inflows
+2022-10-10 14:55:44.186  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting ATM Outflows
+2022-10-10 14:55:44.186  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Outflows
+2022-10-10 14:55:44.186  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Outflows
+2022-10-10 14:55:44.187  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting EMI Outflows
+2022-10-10 14:55:44.187  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Coll Outflows
+2022-10-10 14:55:44.187  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Particulars...
+2022-10-10 14:55:44.187  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Credits
+2022-10-10 14:55:44.188  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Debits
+2022-10-10 14:55:44.188  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.service.BSA_AnalyseData_service    : BSA Report Created Successfully.
+2022-10-10 14:55:44.250  INFO 6087 --- [http-nio-8080-exec-10] c.e.b.controller.FileController          : Customer Found with Customer ID: 888342320
+2022-10-10 14:58:22.443  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.controller.FileController          : Uploading the file: sample_amit.pdf
+2022-10-10 14:58:22.493  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_PDF_Service            : Processing file...
+2022-10-10 14:58:22.495  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_PDF_Service            : Number of pages found: 11
+2022-10-10 14:58:31.457  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_PDF_Service            : Converting PDF file <TABLES> to Excel Sheet
+2022-10-10 14:58:31.461  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_PDF_Service            : Extracting the data into JSON format.
+2022-10-10 14:58:31.466  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_PDF_Service            : Extraction Completed.
+2022-10-10 14:58:31.477  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_PDF_Service            : Converting PDF file <TABLES> to Excel Sheet
+2022-10-10 14:58:35.244  WARN 6087 --- [http-nio-8080-exec-3] o.a.pdfbox.pdmodel.font.PDSimpleFont     : No Unicode mapping for .notdef (9) in font Times-Roman
+2022-10-10 14:58:35.313  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.controller.FileController          : Uploaded the file successfully: sample_amit.pdf
+2022-10-10 14:58:35.313  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_AnalyseData_service    : Creating BSA Report...
+2022-10-10 14:58:35.330  INFO 6087 --- [http-nio-8080-exec-3] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Credits
+2022-10-10 14:58:35.337 ERROR 6087 --- [http-nio-8080-exec-3] c.e.b.controller.FileController          : Could not upload the file: sample_amit.pdf!
+2022-10-10 15:02:58.737  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.controller.FileController          : Searching Customer with Customer ID: 888342320
+2022-10-10 15:02:58.746  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Creating BSA Report...
+2022-10-10 15:02:58.754  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Credits
+2022-10-10 15:02:58.755  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Debits
+2022-10-10 15:02:58.755  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting monthwise balance.
+2022-10-10 15:02:58.755  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Opening Balance.
+2022-10-10 15:02:58.755  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Closing Balance.
+2022-10-10 15:02:58.757  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Average Balance
+2022-10-10 15:02:58.757  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Credit Balance
+2022-10-10 15:02:58.757  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Overall Debit Balance
+2022-10-10 15:02:58.758  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 15:02:58.758  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Credit
+2022-10-10 15:02:58.759  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Number of Debit
+2022-10-10 15:02:58.760  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Credit to Debit Ratio
+2022-10-10 15:02:58.761  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Balance
+2022-10-10 15:02:58.761  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Credits
+2022-10-10 15:02:58.761  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Highest Debits
+2022-10-10 15:02:58.761  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Credits
+2022-10-10 15:02:58.762  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Sizewise Debits
+2022-10-10 15:02:58.762  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Credits
+2022-10-10 15:02:58.772  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Modewise Debits
+2022-10-10 15:02:58.773  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Average Balance
+2022-10-10 15:02:58.773  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Balance
+2022-10-10 15:02:58.778  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Highest Monthly Average Balance
+2022-10-10 15:02:58.780  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Lowest Monthly Average Balance
+2022-10-10 15:02:58.781  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Inflows
+2022-10-10 15:02:58.782  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting NEFT Inflows
+2022-10-10 15:02:58.783  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Inflows
+2022-10-10 15:02:58.783  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Pd Inflows
+2022-10-10 15:02:58.784  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting ATM Outflows
+2022-10-10 15:02:58.784  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting IMPS Outflows
+2022-10-10 15:02:58.784  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting UPI Outflows
+2022-10-10 15:02:58.785  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting EMI Outflows
+2022-10-10 15:02:58.785  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Int.Coll Outflows
+2022-10-10 15:02:58.788  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Particulars...
+2022-10-10 15:02:58.789  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Credits
+2022-10-10 15:02:58.789  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : Getting Monthwise Count Of Debits
+2022-10-10 15:02:58.789  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.service.BSA_AnalyseData_service    : BSA Report Created Successfully.
+2022-10-10 15:02:58.824  INFO 6087 --- [http-nio-8080-exec-5] c.e.b.controller.FileController          : Customer Found with Customer ID: 888342320

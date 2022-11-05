@@ -1,0 +1,26 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: BSA-SERVICE
+  data:
+    mongodb:
+      host: bsa-mongo-container
+      port: 27017
+      database: tempBSAData
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
+    instance:
+      hostname: eureka
+
+logging:
+  file:
+    path: .
+    name: BSALogs
